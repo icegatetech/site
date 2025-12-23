@@ -15,15 +15,17 @@
     "@gravity-ui/uikit": "^6.38.0",
     "next": "14.2.21",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-gtm-module": "^2.0.11"
   },
   "devDependencies": {
+    "@gravity-ui/tsconfig": "^1.0.0",
     "@types/node": "^20.17.11",
     "@types/react": "^18.3.17",
     "@types/react-dom": "^18.3.5",
+    "@types/react-gtm-module": "^2.0.4",
     "eslint": "^8.57.1",
     "eslint-config-next": "14.2.21",
-    "@gravity-ui/tsconfig": "^1.0.0",
     "typescript": "^5.7.2"
   }
 }

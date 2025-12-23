@@ -8,6 +8,7 @@ import {
 } from '@gravity-ui/page-constructor';
 import { ThemeProvider } from '@gravity-ui/uikit';
 import { landingContent } from '@/content/landing';
+import TagManager from 'react-gtm-module';
 
 export function LandingPage() {
   const [theme, setTheme] = React.useState<Theme>(Theme.Light);
@@ -39,6 +40,13 @@ export function LandingPage() {
 
   // Map Theme enum to ThemeProvider string
   const themeValue = theme === Theme.Dark ? 'dark' : 'light';
+
+  React.useEffect(() => {
+    const tagManagerArgs = {
+      gtmId: 'GTM-P7CJRZM2'
+    };
+    TagManager.initialize(tagManagerArgs);
+  }, []);
 
   return (
     <ThemeProvider theme={themeValue}>
