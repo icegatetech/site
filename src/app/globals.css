@@ -1,0 +1,138 @@
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--g-text-body-font-family);
+  background: var(--g-color-base-background);
+  color: var(--g-color-text-primary);
+}
+
+/* Custom styles for the landing page */
+.pc-header-block {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pc-header-block__title {
+  font-size: 3.5rem !important;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4a90d9 0%, #67b8e3 50%, #4a90d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .pc-header-block__title {
+    font-size: 2rem !important;
+  }
+}
+
+/* Feature cards styling */
+.pc-extended-features-block {
+  padding: 4rem 0;
+}
+
+.pc-extended-features-block__item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pc-extended-features-block__item:hover {
+  transform: translateY(-4px);
+}
+
+/* Banner block styling */
+.pc-banner-block {
+  margin: 2rem 0;
+}
+
+/* Icons block styling */
+.pc-icons-block {
+  padding: 3rem 0;
+}
+
+.pc-icons-block__item {
+  transition: transform 0.2s ease;
+}
+
+.pc-icons-block__item:hover {
+  transform: scale(1.05);
+}
+
+/* Info block styling */
+.pc-info-block {
+  padding: 3rem 0;
+}
+
+/* Content layout block styling */
+.pc-content-layout-block {
+  padding: 3rem 0;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pc-animate-block_animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Link hover effects */
+a {
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Button enhancements */
+.pc-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.pc-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--g-color-base-generic);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--g-color-base-generic-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--g-color-base-generic-medium);
+}
