@@ -5,7 +5,7 @@ import '@gravity-ui/uikit/styles/styles.css';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.icegate.tech'),
+  metadataBase: new URL('https://icegate.tech'),
   title: 'IceGate - Observability Data Lake Engine',
   description:
     'An open-source Observability Data Lake Engine. Fast, cost-effective, and scalable observability data storage built on Apache Iceberg, Arrow, and Parquet with OpenTelemetry support.',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'IceGate - Observability Data Lake Engine',
     description:
       'Open-source observability data storage built on open standards. Cost-effective, scalable, and vendor-neutral.',
-    url: 'https://www.icegate.tech',
+    url: 'https://icegate.tech',
     siteName: 'IceGate',
     type: 'website',
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       'Open-source observability data storage built on open standards.',
   },
   alternates: {
-    canonical: 'https://www.icegate.tech',
+    canonical: 'https://icegate.tech',
   },
 };
 
