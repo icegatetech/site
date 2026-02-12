@@ -58,7 +58,7 @@ Rule Management Engine generates alerts from your observability data. Define ale
 
 ## Technology Stack
 
-IceGate is built on battle-tested open source technologies trusted by enterprises worldwide:
+IceGate is built on battle-tested open-source technologies trusted by enterprises worldwide:
 
 - **Apache Iceberg** — Open table format for huge analytic datasets, providing ACID transactions and schema evolution
 - **Apache DataFusion** — Fast, extensible query engine built in Rust for high-performance analytics
