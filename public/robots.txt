@@ -4,3 +4,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://icegate.tech/sitemap.xml
+
+# LLMs.txt location
+Llms-Txt: https://icegate.tech/llms.txt
