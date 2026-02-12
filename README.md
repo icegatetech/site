@@ -28,7 +28,7 @@ npm run lint     # Run ESLint
 
 ## Project Structure
 
-```
+```text
 src/
 ├── app/
 │   ├── layout.tsx      # Root layout with SEO metadata
