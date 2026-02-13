@@ -1,0 +1,23 @@
+# IceGate
+
+> An open-source Observability Data Lake Engine — fast, cost-effective, and scalable observability data storage built on open standards.
+
+IceGate stores all observability data (logs, metrics, traces, events) in object storage using open formats like Apache Iceberg, Arrow, and Parquet. It provides exactly-once ingestion via OpenTelemetry Protocol, real-time queries through Apache DataFusion, and independent scaling of compute and storage. No vendor lock-in — query your data with any Iceberg-compatible tool.
+
+## Docs
+
+- [Documentation](https://docs.icegate.tech): Getting started guides, architecture reference, and API docs
+- [GitHub](https://github.com/icegatetech/icegate): Source code, issues, and contributing guidelines
+
+## Community
+
+- [Slack](https://join.slack.com/t/icegate/shared_invite/zt-3ln3iae5z-YPz8piGJgbv~Zcc1Ev14OA): Join the IceGate community on Slack
+- [Email](mailto:contact@icegate.team): Contact the team for support, feedback, or collaboration
+
+## Technology
+
+- [Apache Iceberg](https://iceberg.apache.org/): Table format for huge analytic datasets
+- [Apache DataFusion](https://datafusion.apache.org/): Fast, extensible query engine
+- [OpenTelemetry](https://opentelemetry.io/): Observability framework for cloud-native software
+- [Apache Arrow](https://arrow.apache.org/): In-memory columnar data format
+- [Apache Parquet](https://parquet.apache.org/): Columnar storage file format

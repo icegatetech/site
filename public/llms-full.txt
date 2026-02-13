@@ -1,0 +1,92 @@
+# IceGate
+
+> An open-source Observability Data Lake Engine — fast, cost-effective, and scalable observability data storage built on open standards.
+
+IceGate stores all observability data (logs, metrics, traces, events) in object storage using open formats like Apache Iceberg, Arrow, and Parquet. It provides exactly-once ingestion via OpenTelemetry Protocol, real-time queries through Apache DataFusion, and independent scaling of compute and storage. No vendor lock-in — query your data with any Iceberg-compatible tool.
+
+## Why IceGate?
+
+### The Problem
+
+Traditional observability platforms lock you into vendor-specific formats and expensive infrastructure. Storage costs grow linearly with data volume, and you're forced to choose between data retention and budget. Proprietary formats mean your data is trapped.
+
+### Our Solution
+
+IceGate stores all data — WAL, catalog, and data layer — in object storage using open formats. Query your observability data with any Iceberg-compatible tool. Scale compute independently. Pay object storage prices, not observability platform prices. Reduce observability costs by 10x or more.
+
+## Features
+
+### Highly Scalable
+Independent scaling of compute resources based on workload demands. Scale ingest and query separately.
+
+### ACID Transactions
+Full transaction support without requiring a dedicated OLTP database. Built on Apache Iceberg and own queue based on WAL on object storage.
+
+### Exactly-Once Delivery
+Reliable data ingestion with no data loss or duplication. Every event is processed exactly once.
+
+### Real-Time Queries
+Access live data through WAL while maintaining historical query capabilities. No lag between ingest and query.
+
+### Open Standards
+Built on Apache Iceberg, Arrow, and Parquet with OpenTelemetry protocol support. No proprietary formats.
+
+### Cost-Effective
+Object storage-based architecture minimizes infrastructure costs. Pay only for what you use.
+
+### Fault-Tolerant
+Designed for resilience and high availability. Automatic recovery from failures.
+
+### No Vendor Lock-in
+Standard formats allow querying with any Iceberg-compatible tool. Your data, your choice.
+
+## Architecture
+
+IceGate uses a compute-storage separation architecture with four core components:
+
+### Ingest
+OpenTelemetry Protocol accepts observability data with exactly-once delivery. Data flows through a Write-Ahead Log (WAL) on object storage for durability.
+
+### Query
+Apache DataFusion + Arrow enables fast queries across logs, metrics, traces, and events. Access both live data in WAL and historical data in Parquet files.
+
+### Maintain
+Apache Parquet optimizes data with statistics, bloom filters, and TTL support. Background compaction and optimization processes keep query performance high.
+
+### Alert
+Rule Management Engine generates alerts from your observability data. Define alert rules and get notified in real-time.
+
+## Technology Stack
+
+IceGate is built on battle-tested open-source technologies trusted by enterprises worldwide:
+
+- **Apache Iceberg** — Open table format for huge analytic datasets, providing ACID transactions and schema evolution
+- **Apache DataFusion** — Fast, extensible query engine built in Rust for high-performance analytics
+- **OpenTelemetry** — Vendor-neutral observability framework for instrumenting, generating, collecting, and exporting telemetry data
+- **Apache Arrow** — Language-independent columnar memory format for flat and hierarchical data
+- **Apache Parquet** — Efficient columnar storage file format optimized for analytics workloads
+
+## Use Cases
+
+### Cost-Effective Observability
+Reduce observability costs by 10x or more by leveraging object storage instead of expensive block storage or proprietary solutions.
+
+### Multi-Tenant Scaling
+Scale components independently based on demand. Handle spikes in one tenant without affecting others.
+
+### Long-Term Data Retention
+Keep observability data for years at object storage prices. Query historical data without rehydration.
+
+### Real-Time Monitoring
+Live data access through WAL combined with historical queries. Get alerts in real-time while analyzing trends.
+
+## Getting Started
+
+- **Documentation**: https://docs.icegate.tech
+- **GitHub**: https://github.com/icegatetech/icegate
+
+## Community & Contact
+
+- **Slack**: https://join.slack.com/t/icegate/shared_invite/zt-3ln3iae5z-YPz8piGJgbv~Zcc1Ev14OA
+- **Email**: contact@icegate.team
+- **Website**: https://icegate.tech
